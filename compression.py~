@@ -12,8 +12,8 @@ compress_ratio = (float(len(original_data)) - float(len(compressed_data))) / flo
 print('Compressed: %d%%' % (100.0 * compress_ratio))
 
 
-f = open('outfile.txt','wb')
-f.write(compressed_data.decode)
+f = open('outfile.csv','wb')
+f.write(compressed_data)
 f.close()
 
 

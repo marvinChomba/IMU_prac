@@ -1,9 +1,9 @@
 import zlib
 
-compressed_data = open('outfile.txt','rb').read()
+compressed_data = open('g6.csv','rb').read()
 decom = zlib.decompress(compressed_data)
 
 
-f = open('decomfile.txt', 'wb')
+f = open('g7.csv', 'wb')
 f.write(decom)
 f.close()
