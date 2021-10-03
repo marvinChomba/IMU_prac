@@ -1,7 +1,7 @@
 import zlib
 
 
-original_data = open('Sample data - Sheet1.csv','rb').read()
+original_data = open('cities.csv','rb').read()
 compressed_data = zlib.compress(original_data,zlib.Z_BEST_COMPRESSION)
 
 #compress_ratio = (float(len(original_data)) - float(len(compressed_data))) / float(len(original_data))
