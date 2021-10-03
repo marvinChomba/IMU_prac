@@ -13,7 +13,7 @@ if(file_size2 > file_size):
     print("Yessirski compress")
     
     
-file_size3 = os.path.getsize('./g7.csv')
+file_size3 = os.path.getsize('./g8.csv')
 print("File Size is :", file_size3, "bytes")
 
 
