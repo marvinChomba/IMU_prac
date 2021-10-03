@@ -1,0 +1,6 @@
+from shutil import copyfile
+
+g = "sjdsjdb.csv"
+print(g[:-3])
+
+#copyfile("./" + file_name, dst)

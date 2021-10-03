@@ -14,9 +14,9 @@ def compress_file(file_name1,file_name2):
 #    print('Compressed: %d%%' % (100.0 * compress_ratio))
 
     #print(sys.argv[2])
-    f = open(file_name2+".txt",'wb')
-    f.write(compressed_data)
-    f.close()
+#    f = open(file_name2+".txt",'wb')
+ #   f.write(compressed_data)
+  #  f.close()
     
     f = open(file_name2+".csv",'wb')
     f.write(compressed_data)
