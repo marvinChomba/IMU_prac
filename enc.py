@@ -40,7 +40,7 @@ class Encryptor:
         with open(file_name, 'rb') as fo:
             ciphertext = fo.read()
         dec = self.decrypt(ciphertext, self.key)
-        with open(file_name[:-4], 'wb') as fo:
+        with open(file_name[:-7]+"1.txt", 'wb') as fo:
             fo.write(dec)
         os.remove(file_name)
 
