@@ -4,6 +4,8 @@ import fileinput
 
 compare_files_error = 0
 
+
+
 def file_len(file_name):
   with open(file_name) as f:
     for i, l in enumerate(f):

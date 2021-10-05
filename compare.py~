@@ -1,25 +1,3 @@
-# -------------------------------------------------------------------
-# --Chipspirit Proprietary
-# --Copyright (C) 2020 Chipspirit
-# --All Rights Reserved
-# -------------------------------------------------------------------
-# --File Name		  : compare_normal.py
-# --Creation Date	  : 12-05-2020
-# --Last Modified         : Tuesday 12 May 2020 03:14:14 PM IST
-# --Author 		  : Sumit Kavathekar
-# --Author's Email	  : sumit.kavathekar@chipspirit.com
-# --Project Name 	  : ABHED-1
-# --Department		  : RTL Design 
-# --Description 	  : 1st input file is 1st argument to be passed :golden
-#                           2nd input file is 2nd argument to be passed :received
-# --Run as                : python compare_block.py gldn.txt rcvd.txt
-
-# --Detailed Description  :
-
-# This script takes in 2 input arguments named as 1. golden txt file and 2. received txt file
-# Then this script simply takes entries from rcvd.txt and compares it with entries in gldn.txt with depth selected as depth(rcvd.txt)
-# If all entries match then COMPARISON SUCCESS else FAILURE !
-
 import sys
 import difflib
 import fileinput

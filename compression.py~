@@ -19,7 +19,7 @@ def compress_file(file_name1):
  #   f.write(compressed_data)
   #  f.close()
     
-    f = open(file_name1 + "-compressed.csv",'wb')
+    f = open(file_name1[:-4] + "-compressed.csv",'wb')
     f.write(compressed_data)
     f.close()
 

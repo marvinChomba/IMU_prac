@@ -5,8 +5,10 @@ import time
 def compress_file(file_name1):
 
     original_data = open(file_name1,'rb').read()
+    start_time = time.time()
     compressed_data = zlib.compress(original_data,zlib.Z_BEST_COMPRESSION)
-
+    print("--- %s seconds ---" % (time.time() - start_time))
+   
     #compress_ratio = (float(len(original_data)) - float(len(compressed_data))) / float(len(original_data))
 
 
@@ -25,8 +27,8 @@ def compress_file(file_name1):
 
 
 if __name__ == "__main__":
-    start_time = time.time()
+#    start_time = time.time()
     compress_file(sys.argv[1])
-    print("--- %s seconds ---" % (time.time() - start_time))
+#    print("--- %s seconds ---" % (time.time() - start_time))
 
 
