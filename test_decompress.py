@@ -1,5 +1,6 @@
 import os
 import sys
+#from csv_diff import load_csv, compare
 
 file_size = os.path.getsize(sys.argv[2])
 print("Decompressed file, " + sys.argv[2] + ", is :", file_size, "bytes")
@@ -9,6 +10,13 @@ print("Decompressed file, " + sys.argv[2] + ", is :", file_size, "bytes")
 file_size2 = os.path.getsize(sys.argv[1])
 print("Main file, " + sys.argv[1] + ", is :", file_size2, "bytes")
 
+
+
+#from csv_diff import load_csv, compare
+#diff = compare(
+ #   load_csv(open("data.csv"), key="computer"),
+  #  load_csv(open("final.csv"), key="computer")
+#)
 
 #compression_ratio = (file_size2 - file_size)/ file_size2
 

@@ -1,7 +1,8 @@
 import zlib
 import sys
+import time
 
-def compress_file(file_name1,file_name2):
+def compress_file(file_name1):
 
     original_data = open(file_name1,'rb').read()
     compressed_data = zlib.compress(original_data,zlib.Z_BEST_COMPRESSION)
@@ -18,11 +19,14 @@ def compress_file(file_name1,file_name2):
  #   f.write(compressed_data)
   #  f.close()
     
-    f = open(file_name2+".csv",'wb')
+    f = open(file_name1[:-4] + "-compressed.csv",'wb')
     f.write(compressed_data)
     f.close()
 
 
 if __name__ == "__main__":
-    compress_file(sys.argv[1],sys.argv[2])
+    start_time = time.time()
+    compress_file(sys.argv[1])
+    print("--- %s seconds ---" % (time.time() - start_time))
+
 
